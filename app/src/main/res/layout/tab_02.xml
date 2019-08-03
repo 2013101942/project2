@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 一项 -->
+        <LinearLayout
+            android:id="@+id/arrivedMsgId"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_linearbutton">
+            <TextView
+                android:id="@+id/arrivedMsgText"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:paddingTop="8dp"
+                android:text="人事来信"
+                android:textSize="20sp"
+                android:lineHeight="40dp"
+                android:gravity="left"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_right2"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+       <LinearLayout
+           android:id="@+id/sendedMsgId"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:clickable="true"
+           android:paddingLeft="20dp"
+           android:background="@drawable/bg_linearbutton">
+           <TextView
+               android:id="@+id/sendedMsgText"
+               android:layout_width="320dp"
+               android:layout_height="50dp"
+               android:paddingTop="8dp"
+               android:text="已发信息"
+               android:textSize="20sp"
+               android:lineHeight="40dp"
+               android:gravity="left"
+                />
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="match_parent"
+               android:src="@drawable/arrow_right2"
+               android:scaleType="fitCenter"/>
+       </LinearLayout>
+
+</LinearLayout>

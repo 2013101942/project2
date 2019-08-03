@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yq.android_recruit">
+    <!-- 开启网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Fragment_mainActivity">
+
+        </activity>
+        <activity android:name=".BlankMsgActivity">
+
+        </activity>
+        <activity android:name=".BlankRecruitActivity">
+
+        </activity>
+        <activity android:name=".CreateResume">
+
+        </activity>
+        <activity android:name=".BaseInfo">
+
+        </activity>
+        <activity android:name=".Education"></activity>
+        <activity android:name=".Experience"></activity>
+        <activity android:name=".IntentJob"></activity>
+        <activity android:name=".ProjectExprience"></activity>
+        <activity android:name=".EducationJobCondition"></activity>
+        <activity android:name=".EducationJobList"></activity>
+        <activity android:name=".EducationList"></activity>
+        <activity android:name=".ProjectExperienceList"></activity>
+        <activity android:name=".ExperienceList"></activity>
+        <activity android:name=".Company"></activity>
+        <activity android:name=".RecruitInfo"></activity>
+        <activity android:name=".MsgContent"></activity>
+        <activity android:name=".SearchActivity"/>
+        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".Collection"></activity>
+        <activity android:name=".ApplyInfo"></activity>
+        <activity android:name=".SuccessInfo"></activity>
+        <activity android:name=".ToApply"></activity>
+        <activity android:name=".MessageSend"></activity>
+    </application>
+
+</manifest>

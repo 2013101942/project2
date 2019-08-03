@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 搜索框-->
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_indextop" >
+        <EditText
+            android:id="@+id/search_jobId"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="搜出你想要的好职位"
+            android:textColor="#ccc"
+            android:textSize="22sp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"/>
+        <ImageButton
+            android:id="@+id/search_searchJobBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sousuo"
+            android:scaleType="fitCenter"
+            android:background="#eee"/>
+    </LinearLayout>
+    <!--公司性质-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp">
+        <RadioGroup
+            android:id="@+id/search_companyProperty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/searchCompanyPropertySiQi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="民营企业"/>
+            <RadioButton
+                android:id="@+id/searchCompanyPropertyGuoQi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国营企业"/>
+        </RadioGroup>
+    </LinearLayout>
+    <!--岗位-->
+    <Spinner
+        android:id="@+id/searchJobs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!--薪资-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Spinner
+            android:id="@+id/searchSalaryStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元/月 - "/>
+        <Spinner
+            android:id="@+id/searchSalaryEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元/月"/>
+    </LinearLayout>
+
+
+</LinearLayout>

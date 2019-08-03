@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/collectId"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_linearbutton">
+        <TextView
+            android:id="@+id/collectTextId"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:paddingTop="8dp"
+            android:text="我的收藏"
+            android:textSize="20sp"
+            android:lineHeight="40dp"
+            android:gravity="left"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_right2"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/applyId"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_linearbutton">
+        <TextView
+            android:id="@+id/applyTextId"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:paddingTop="8dp"
+            android:text="已申请"
+            android:textSize="20sp"
+            android:lineHeight="40dp"
+            android:gravity="left"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_right2"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/successId"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_linearbutton">
+        <TextView
+            android:id="@+id/successTextId"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:paddingTop="8dp"
+            android:text="已通过"
+            android:textSize="20sp"
+            android:lineHeight="40dp"
+            android:gravity="left"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_right2"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

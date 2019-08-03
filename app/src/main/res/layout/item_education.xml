@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="left">
+        <TextView
+            android:id="@+id/educationItemSchool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="学校"/>
+        <TextView
+            android:id="@+id/educationItemTimeStart"
+            android:layout_below="@id/educationItemSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="开始时间"/>
+        <TextView
+            android:id="@+id/educationListDivide_1"
+            android:layout_toRightOf="@id/educationItemTimeStart"
+            android:layout_below="@id/educationItemSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/educationItemTimeEnd"
+            android:layout_toRightOf="@id/educationListDivide_1"
+            android:layout_below="@id/educationItemSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:text="结束时间"/>
+    </RelativeLayout>
+</LinearLayout>

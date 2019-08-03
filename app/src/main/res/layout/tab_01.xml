@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/indexTopId"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/bg_indextop" >
+        <EditText
+            android:id="@+id/jobId"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="搜出你想要的好职位"
+            android:textColor="#ccc"
+            android:textSize="22sp"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"/>
+        <ImageButton
+            android:id="@+id/searchJobId"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sousuo"
+            android:scaleType="fitCenter"
+
+            android:background="#eee"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:id="@+id/schoolRecruitId"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp">
+            <ImageView
+                android:id="@+id/schoolRecruitImg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/xiaoyuanzhaopin"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="校园招聘"
+                android:gravity="center"
+                android:layout_below="@id/schoolRecruitImg" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/JobSearchMethodId"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp">
+            <ImageView
+                android:id="@+id/JobSearchMethodImg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/qiuzhi"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="求职攻略"
+                android:gravity="center"
+                android:layout_below="@id/JobSearchMethodImg"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/recruitInfo_ListId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
